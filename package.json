@@ -1,0 +1,35 @@
+{
+  "name": "anti-with-gehihi",
+  "version": "0.1.0",
+  "description": "Gemini Web thinks. Antigravity works. Two-way automation bridge between Google Gemini Web and Google Antigravity via MCP, Tampermonkey Userscript, and Cloudflare Tunnel.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "a2g": "./bin/a2g.js",
+    "gehihi": "./bin/a2g.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "commander": "^14.0.0",
+    "express": "^5.1.0",
+    "ignore": "^7.0.5",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
